@@ -14,10 +14,12 @@ import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 })
 export class LunchChoicesComponent implements OnInit {
 
-  constructor() {}
+  choices
+
   constructor(private choicesService: ChoicesService) {}
 
   ngOnInit() {
+    this.choicesService.getChoices().then(choices => this.choices = choices);
   }
 
 }

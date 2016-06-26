@@ -1,4 +1,4 @@
-<p>
-  lunch-choices works!
-  <lunch-choice></lunch-choice>
-</p>
+  <h2>lunch-choices works!</h2>
+  <md-list>
+    <lunch-choice *ngFor="let choice of choices">{{ choice.name }}</lunch-choice>
+  </md-list>

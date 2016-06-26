@@ -13,10 +13,12 @@ import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
 })
 export class LunchOptionsComponent implements OnInit {
 
-  constructor() {}
+  options
+
   constructor(private optionsService: OptionsService) {}
 
   ngOnInit() {
+    this.optionsService.getOptions().then(options => this.options = options);
   }
 
 }

@@ -1,4 +1,4 @@
-<p>
-  lunch-options works!
-  <lunch-option></lunch-option>
-</p>
+  <h2>lunch-options works!</h2>
+  <md-button-toggle-group multiple>
+    <lunch-option *ngFor="let option of options">{{ option }}</lunch-option>
+  </md-button-toggle-group>
