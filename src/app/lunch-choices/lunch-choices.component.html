@@ -1,4 +1,4 @@
-  <h2>lunch-choices works!</h2>
+  <h2 class="md-display-2">Here are your choices</h2>
   <md-list>
-    <lunch-choice *ngFor="let choice of choices">{{ choice.name }}</lunch-choice>
+    <lunch-choice *ngFor="let choice of choices" [choice]="choice"></lunch-choice>
   </md-list>

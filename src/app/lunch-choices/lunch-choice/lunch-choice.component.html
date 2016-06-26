@@ -1,4 +1,8 @@
-<button md-list-item>
-  <h3 md-line><ng-content></ng-content></h3>
-</button>
-<md-divider></md-divider>
+  <md-list-item>
+    <h3 md-line> {{ choice.name }} </h3>
+    <p md-line>
+      <span> Options: </span>
+      <span class="demo-2"> {{ choice.options }} </span>
+    </p>
+  </md-list-item>
+  <md-divider></md-divider>
