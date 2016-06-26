@@ -1,3 +1,5 @@
-<md-button-toggle md-raised-button>
-  <ng-content></ng-content>
-</md-button-toggle>
+<p>
+  <button md-raised-button style="width:200px;" (click)="active=!active" [ngClass]="{'active': active }">
+    <ng-content></ng-content>
+  </button>
+</p>
