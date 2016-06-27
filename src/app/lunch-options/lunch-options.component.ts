@@ -21,4 +21,9 @@ export class LunchOptionsComponent implements OnInit {
     this.optionsService.getOptions().then(options => this.options = options);
   }
 
+  onSelected(option) {
+    console.log("fired onSelected for lunch-options.component");
+    this.optionsService.onSelected(option);
+  }
+
 }

@@ -13,17 +13,18 @@ import { OptionsService } from '../../options.service';
 })
 export class LunchOptionComponent implements OnInit {
 
-  constructor() {}
   @Input() option;
 
   active = false;
 
+  constructor(private optionsService: OptionsService) {}
 
   ngOnInit() {
   }
 
   selected(option){
     this.active = !this.active;
+    this.optionsService.onSelected(option);
   }
 
 }
