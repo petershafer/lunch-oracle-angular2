@@ -1,5 +1,5 @@
 <p>
-  <button md-raised-button style="width:200px;" (click)="active=!active" [ngClass]="{'active': active }">
-    <ng-content></ng-content>
+  <button md-raised-button style="width:200px;" (click)="selected(option)" [ngClass]="{'active': active }">
+    {{ option }}
   </button>
 </p>
