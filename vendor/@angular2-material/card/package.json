@@ -1,0 +1,53 @@
+{
+  "name": "@angular2-material/card",
+  "version": "2.0.0-alpha.5-2",
+  "description": "Angular 2 Material card",
+  "main": "./card.js",
+  "typings": "./card.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "material design",
+    "components",
+    "card"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.5-2"
+  },
+  "_id": "@angular2-material/card@2.0.0-alpha.5-2",
+  "scripts": {},
+  "_shasum": "780c25be75312a844e7b33333e9ce3a48464a296",
+  "_from": "@angular2-material/card@>=2.0.0-alpha.5-2 <3.0.0",
+  "_resolved": "https://registry.npmjs.org/@angular2-material/card/-/card-2.0.0-alpha.5-2.tgz",
+  "_npmVersion": "3.7.5",
+  "_nodeVersion": "5.7.0",
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "780c25be75312a844e7b33333e9ce3a48464a296",
+    "tarball": "https://registry.npmjs.org/@angular2-material/card/-/card-2.0.0-alpha.5-2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/card-2.0.0-alpha.5-2.tgz_1464814622070_0.7167190611362457"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}
