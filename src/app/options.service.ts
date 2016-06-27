@@ -7,8 +7,26 @@ export class OptionsService {
 
   constructor() {
     this.options = [
-      "Option 1",
-      "Option 2"
+
+      "Walking Distance",
+      "Driving Distance",
+
+      "Outdoor Seating",
+      "Sit Down",
+
+      "Fast Service",
+      "Take Out",
+
+      "Pizza",
+      "Alcohol",
+      "Thai",
+      "Hot Dogs",
+      "Coffee",
+      "Shishi",
+      "Comfort Food",
+      "Breakfast",
+      "Desserts"
+
     ]
   }
 
