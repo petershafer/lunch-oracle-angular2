@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LunchChoiceComponent } from './lunch-choice/lunch-choice.component';
 import { ChoicesService } from '../choices.service';
-import { OptionsService } from '../options.service';
 import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 
@@ -11,22 +10,16 @@ import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
   templateUrl: 'lunch-choices.component.html',
   styleUrls: ['lunch-choices.component.css'],
   directives: [LunchChoiceComponent, MD_LIST_DIRECTIVES, MD_CARD_DIRECTIVES],
-  providers: [ChoicesService, OptionsService]
+  providers: [ChoicesService]
 })
 export class LunchChoicesComponent implements OnInit {
 
   choices
 
-  constructor(private choicesService: ChoicesService, private optionsService: OptionsService) {
-    optionsService.optionChanged$.subscribe(option => this.optionChanged(option));
-  }
+  constructor(private choicesService: ChoicesService) {}
 
   ngOnInit() {
     this.choicesService.getChoices().then(choices => this.choices = choices);
-  }
-
-  optionChanged(option) {
-    console.log("adjusting list of choices for...", option);
   }
 
 }
