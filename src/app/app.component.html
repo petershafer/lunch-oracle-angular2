@@ -2,6 +2,6 @@
   The Lunch Oracle
 </h1>
 <div class="app-layout">
-  <div class="app-options"><lunch-options></lunch-options></div>
-  <div class="app-choices"><lunch-choices></lunch-choices></div>
+  <div class="app-options"><lunch-options (optChange)="optionsChanged($event)"></lunch-options></div>
+  <div class="app-choices"><lunch-choices [filters]="selectedOptions"></lunch-choices></div>
 </div>

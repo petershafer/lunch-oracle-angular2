@@ -13,4 +13,19 @@ import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 })
 export class AppComponent {
   title = 'app works!';
+  selectedOptions
+
+  constructor() {
+    this.selectedOptions = [];
+  }
+
+  optionsChanged(option) {
+    console.log(option);
+    let searchIndex = this.selectedOptions.indexOf(option);
+    if(searchIndex > -1){
+      this.selectedOptions.splice(searchIndex, 1);
+    }else{
+      this.selectedOptions.push(option);
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { OptionsService } from '../../options.service';
@@ -13,17 +13,21 @@ import { OptionsService } from '../../options.service';
 })
 export class LunchOptionComponent implements OnInit {
 
-  constructor() {}
   @Input() option;
+  @Output() onSelected;
 
   active = false;
 
+  constructor() {
+    this.onSelected = new EventEmitter();
+  }
 
   ngOnInit() {
   }
 
   selected(option){
     this.active = !this.active;
+    this.onSelected.emit(option);
   }
 
 }
