@@ -12,7 +12,6 @@ import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
   directives: [LunchChoicesComponent, LunchOptionsComponent, MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES]
 })
 export class AppComponent {
-  title = 'app works!';
   selectedOptions
 
   constructor() {
@@ -29,3 +28,10 @@ export class AppComponent {
     }
   }
 }
+
+/*
+  Todo:
+  - Propagate events without bucket brigade (subscriptions? subjects? rxjs?)
+  - Come up with a better way to filter the list rather than show and hide.
+  - Put some real data in there.
+*/
