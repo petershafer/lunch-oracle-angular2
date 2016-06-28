@@ -1,5 +1,6 @@
 .app-layout {
   position: relative;
+  top: -20px;
 }
 
 .app-options {
@@ -16,4 +17,11 @@
 
 * {
   font-family: roboto;
+}
+h1 {
+  color: rgb(29, 162, 255);
+  text-shadow: 1px 1px #000000;
+  font-size: 42px;
+  font-weight: bold;
+  font-family: impact;
 }

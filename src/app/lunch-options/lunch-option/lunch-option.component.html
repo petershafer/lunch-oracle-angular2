@@ -1,5 +1,8 @@
 <p>
-  <button md-raised-button style="width:200px;" (click)="selected(option)" [ngClass]="{'active': active }">
+  <button md-raised-button
+    style="width:200px; color:white;"
+    (click)="selected(option)"
+    [ngClass]="{'active': active, 'inactive': !active }">
     {{ option }}
   </button>
 </p>
