@@ -1,4 +1,4 @@
   <h2 class="md-display-2">Here are your choices</h2>
   <md-list>
-    <lunch-choice [hidden]="filtered(choice)" *ngFor="let choice of choices" [choice]="choice"></lunch-choice>
+    <lunch-choice [ngClass]="{ 'inactive': filtered(choice) }" *ngFor="let choice of choices" [choice]="choice"></lunch-choice>
   </md-list>
