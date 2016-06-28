@@ -2,7 +2,11 @@
     <h3 md-line> {{ choice.name }} </h3>
     <p md-line>
       <span> Options: </span>
-      <span class="demo-2"> {{ choice.options }} </span>
+      <span class="demo-2 options">
+        <span
+          [ngClass]="{ 'option': i > 0 }"
+          *ngFor="let option of choice.options; let i = index">{{ option }}</span>
+      </span>
     </p>
   </md-list-item>
   <md-divider></md-divider>
