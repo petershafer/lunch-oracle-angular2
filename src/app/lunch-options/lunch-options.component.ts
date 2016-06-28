@@ -13,7 +13,7 @@ import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
 })
 export class LunchOptionsComponent implements OnInit {
 
-  options
+  options;
   @Output() optChange;
 
   constructor(private optionsService: OptionsService) {

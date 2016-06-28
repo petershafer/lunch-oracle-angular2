@@ -14,8 +14,8 @@ import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 })
 export class LunchChoicesComponent implements OnInit {
 
-  choices
-  @Input() filters
+  choices;
+  @Input() filters;
 
   constructor(private choicesService: ChoicesService) {}
 
